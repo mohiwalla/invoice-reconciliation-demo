@@ -1,0 +1,44 @@
+BENCH ROAD FLEET REPAIR
+
+
+
+Service invoice
+
+Invoice number: BR-1042
+
+Invoice date: 2026-10-21
+
+Shop: Bench Road Fleet Repair
+
+Currency: USD
+
+
+
+
+ Description                                 Qty        Rate    Amount
+
+
+
+ Wheel bearing inspection                    1.5      110.00    165.00
+
+
+ Axle seal kit                                   2     54.50    109.00
+
+
+ Shop supplies                                   1     14.00     14.00
+
+
+
+
+                                           Subtotal             288.00
+
+                                           Tax                   16.38
+
+
+
+                                           Total               304.38
+
+
+
+
+Fictional sample for invoice extraction.

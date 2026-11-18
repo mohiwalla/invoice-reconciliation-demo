@@ -1,0 +1,29 @@
+name: Verify invoice demo
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out the demo
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        with:
+          persist-credentials: false
+
+      - name: Install PDF tools
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y --no-install-recommends poppler-utils
+          pdftotext -v
+
+      - name: Test extraction and reconciliation
+        run: python3 -m unittest -v
+
+      - name: Reproduce the published reports from both PDFs
+        run: |
+          python3 batch.py --out "$RUNNER_TEMP/invoice-results" samples/balanced.pdf samples/total-mismatch.pdf
+          diff -ru example-output "$RUNNER_TEMP/invoice-results"

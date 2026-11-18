@@ -1,0 +1,7 @@
+﻿source_file,invoice_number,line,description,quantity,unit_price_cents,amount_cents
+balanced.pdf,BR-1042,22,Wheel bearing inspection,1.5,11000,16500
+balanced.pdf,BR-1042,25,Axle seal kit,2,5450,10900
+balanced.pdf,BR-1042,28,Shop supplies,1,1400,1400
+total-mismatch.pdf,BR-1043,22,Wheel bearing inspection,1.5,11000,16500
+total-mismatch.pdf,BR-1043,25,Axle seal kit,2,5450,10900
+total-mismatch.pdf,BR-1043,28,Shop supplies,1,1400,1400

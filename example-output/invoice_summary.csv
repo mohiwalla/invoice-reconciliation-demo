@@ -1,0 +1,3 @@
+﻿source_file,shop,invoice_number,invoice_date,currency,charge_count,charge_sum_cents,subtotal_cents,tax_cents,total_cents,status,issue_count
+balanced.pdf,Bench Road Fleet Repair,BR-1042,2026-10-21,USD,3,28800,28800,1638,30438,balanced,0
+total-mismatch.pdf,Bench Road Fleet Repair,BR-1043,2026-10-21,USD,3,28800,28800,1638,31438,review,1
